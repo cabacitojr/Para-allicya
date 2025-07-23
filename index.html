@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carta para Minha Namorada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="mostrarCarta">Abrir Carta 💌</button>
+
+  <div class="carta escondida" id="carta">
+    <h1>Querida Allicya</h1>
+    <p>Desde o dia que eu te conheci minha vida mudou, meus dias de sombras se transformaram em dias de luz.</p>
+    <p>Eu acordo todos os dias pensando o quanto eu sou sortudo de ter você pra mim.</p>
+    <p>Você é o tesouro que eu nunca tive, e pra mim é a jóia mais valiosa.</p>
+    <p>Você é a pessoa que eu quero passar todos os dias da minha vida juntos, realizar nossos sonhos, de ver o pôr do sol juntos na praia, e de trabalhar na obra de Deus.</p>
+    <p>Eu te amo, e quero te amar mais, como Deus amou a igreja.</p>
+    <p><em>Do seu querido dev: Samuel Coimbra</em></p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('mostrarCarta');
+    const carta = document.getElementById('carta');
+
+    btn.addEventListener('click', () => {
+      carta.classList.remove('escondida');
+      btn.style.display = 'none'; // esconde o botão depois de abrir a carta
+    });
+  </script>
+</body>
+</html>
